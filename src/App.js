@@ -1,6 +1,7 @@
 import { useState } from "react";
+import FakeChat from "./FakeChat";
 // import Timer from "./Timer";
-import Avatar from "./Avatar";
+// import Avatar from "./Avatar";
 
 function App() {
   
@@ -12,7 +13,7 @@ function App() {
     <div style={{padding:20}}>
       
       <button onClick={()=>setToggle(!toggle)}>Toggle</button>
-      {toggle && <Avatar />}
+      {toggle && <FakeChat />}
     </div>
   );
 }
